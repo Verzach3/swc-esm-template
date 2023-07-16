@@ -1,1 +1,4 @@
-await new Promise(r => setTimeout(r, 1000) )
+await new Promise<void>((resolve) => setTimeout(() => {
+  console.log('Hello World')
+  resolve()
+}, 1000) )
